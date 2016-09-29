@@ -1,33 +1,401 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Jason Lai Developer</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Jason Lai</title>
 
-  <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 
-  <!-- Compiled and minified JavaScript -->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
-
-  <!-- Custom CSS -->
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-<nav class="white" role="navigation">
-  <div class="nav-wrapper container">
-    <a id="logo-container" href="#" class="brand-logo">Logo</a>
-    <ul class="right hide-on-med-and-down">
-      <li><a href="#">Navbar Link</a></li>
-    </ul>
+  <div class="navbar-fixed">
+    <nav class="transparent" role="navigation" data-icon="expand_more">
+      <div class="nav-wrapper">
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#about" class="jump">About</a></li>
+          <li><a href="#skills" class="jump">Skills</a></li>
+          <li><a href="#experience" class="jump">Experience</a></li>
+          <li><a href="#education" class="jump">Education</a></li>
+          <li><a href="#projects" class="jump">Portfolio</a></li>
+          <li><a href="#contact" class="jump">Contact</a></li>
+        </ul>
 
-    <ul id="nav-mobile" class="side-nav">
-      <li><a href="#">Navbar Link</a></li>
-    </ul>
-    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="side-nav">
+          <li><a href="#about" class="jump">About</a></li>
+          <li><a href="#skills" class="jump">Skills</a></li>
+          <li><a href="#experience" class="jump">Experience</a></li>
+          <li><a href="#education" class="jump">Education</a></li>
+          <li><a href="#projects" class="jump">Portfolio</a></li>
+          <li><a href="#contact" class="jump">Contact</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
   </div>
-</nav>
 
-<h1>Jason Lai</h1>
-</body>
+  <div id="index-banner" class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <h1 class="header center teal-text text-lighten-2">Jason Lai</h1>
+        <div class="row center">
+          <h4 class="header col s12 title-subheading"></h4>
+        </div>
+        <div class="row center">
+          <a href="#about" id="download-button" class="btn-large waves-effect waves-light teal lighten-1 jump">Learn More</a>
+        </div>
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="images/hong-kong.jpg" alt="Hong Kong"></div>
+  </div>
+
+
+  <div class="container top-offset">
+    <div class="section" id="about">
+  
+      <div class="row">
+        <div class="col s12 center">
+          <h3>About Me</h3>
+          <p class="left-align light">
+          I'm a full stack web developer looking for new opportunities to work, learn and develop new skills. For the past five years I was working client-side doing digital project management in the Scottish heritage tourism industry. Although I enjoyed and had learned an immense amount in that job, I felt that I was ready to move onto new challenges. Quarter-life crisis in hand, I decided to take the plunge; I quit my job and moved from Edinburgh to London where I recently completed an intensive three-month coding bootcamp at General Assembly.</p>
+
+          <p class="left-align light">
+          Originally born and raised in Hong Kong, I've also lived in Boston for 5 years, Edinburgh for 8 years, and I am now looking forward to all that London has to offer. I'm a geek at heart and love all things tech. I would love to work in a dynamic environment where I can learn from other developers and be involved with a variety of different projects and tech stacks.</p>
+
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="shader">
+    <div class="parallax-container valign-wrapper" id="skills">
+      <div class="section">
+        <div class="container">
+          <div class="row center">
+            <h3 class="header col s12 light">Skills</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+      </div>
+      <div class="parallax"><img src="images/edinburgh.jpg" alt="Edinburgh"></div>
+    </div>
+  </div>
+
+  <div class="">
+    <div class="section" id="experience">
+
+        <div> <!-- removed col s12 center -->
+          <h3 class="center">Recent Experience</h3>
+          <!-- Start timeline -->
+          <div class="row valign-wrapper">
+            <div class="timeline timeline-start col l2 offset-l5 center">
+              <a href="https://generalassemb.ly"><img src="images/general-assembly.png" alt="General Assembly"></a>
+            </div>
+
+            <div class="col l4 pull-l1" id="job-1">
+              <div class="card-panel teal lighten-1">
+                <span class="white-text">
+                <h5><span class="yellow-text text-lighten-3">Web Development Immersive</span></h5>
+                <h6>General Assembly, Jun 2016 - Sep 2016</h6>
+                <p>Web Development Immersive is a three month long, full-time coding bootcamp where I learned to build full stack web applications using industry standard technologies. This was the most challenging, yet rewarding career decision I have ever made. Not only have I learned to websites, but also to problem-solve programmatically.</p>  
+                </span>
+              </div>
+            </div>
+          </div> <!-- end of timeline row1 -->
+
+          <div class="row valign-wrapper">
+            <div class="timeline col l2 offset-l5 center">
+              <a href="https://www.historicenvironment.scot/"><img src="images/hes.png" alt="HES"></a>
+            </div>
+
+            <div class="col l4 pull-l7" id="job-2">
+              <div class="card-panel teal lighten-1">
+                <span class="white-text">
+                <h5><span class="yellow-text text-lighten-3">Ecommerce Executive</span></h5>
+                <h6>Historic Environment Scotland, Aug 2013 - Aug 2016</h6>
+                <p>I project managed the implementation of new technologies into the business, including upgrades/enhancements to our e-ticketing system, the launch of our online retail shop, responsive design for our website, and booking systems for our Sales and Education departments. Beyond the technical aspect, a large part of the job was ensuring the business was ready to take on the new technologies. I scoped business requirements, documented changes to processes, trained staff on new procedures, liaised with relevant teams on legal/financial compliance, worked with our marketing team to promote products, worked with commercial analysts on data, and more. </p>
+                </span>
+              </div>
+            </div>
+          </div> <!-- end of timeline row2 -->
+
+          <div class="row valign-wrapper">
+            <div class="timeline col l2 offset-l5 center">
+              <a href="https://www.historicenvironment.scot/"><img src="images/hes.png" alt="HES"></a>
+            </div>
+
+            <div class="col l4 pull-l1" id="job-3">
+              <div class="card-panel teal lighten-1">
+                <span class="white-text">
+                <h5><span class="yellow-text text-lighten-3">Ecommerce Coordinator</span></h5>
+                <h6>Historic Environment Scotland, Oct 2011 - Jul 2013</h6>
+                <p>I was promoted to grow the organisation's online income by making tickets to the company's portfolio of over 70 visitor attractions available for purchase online. In order to better do my job I had to teach myself HTML and CSS to work with our ecommerce platform, which is how I became interested in web development. The company's growth in ecommerce gave me the opportunity to work on and deliver various digital projects such as our mobile ticketing site and a Business to Business booking system for our corporate clients.</p> 
+                </span>
+              </div>
+            </div>
+          </div> <!-- end of timeline row3 -->
+
+          <div class="row valign-wrapper">
+            <div class="timeline timeline-end col l2 offset-l5 center" >
+              <a href="https://www.historicenvironment.scot/"><img src="images/hes.png" alt="HES"></a>
+            </div>
+
+            <div class="col l4 pull-l7" id="job-4">
+              <div class="card-panel teal lighten-1">
+                <span class="white-text">
+                <h5><span class="yellow-text text-lighten-3">Sales Team Administrator / Membership Assistant</span></h5>
+                <h6>Historic Environment Scotland, Mar 2010 - Sep 2011</h6>
+                <p>Graduating around the time of the recession, I took an entry level job at Historic Environment Scotland, the lead public body in Scottish heritage tourism and conservation. The job was mainly providing administrative support to the Membership department and Sales department, but it also gave me the opportunity to improve operational processes, work with customers and trade clients, and learn more about the commercial business. I worked my way up the company and landed my next role in the Ecommerce department.</p>
+                </span>
+              </div>
+            </div>
+          </div> <!-- end of timeline row4 -->
+          
+          <!-- End timeline -->
+          <div class="row center">
+          <p>For my complete work history see my <a href="https://uk.linkedin.com/in/jason-lai-developer">LinkedIn profile</a>.</p>
+          </div>
+        </div> 
+
+    </div>
+  </div>
+
+  <div class="shader">
+    <div class="parallax-container valign-wrapper" id="education">
+      <div class="section educ">
+        <div class="">
+          <div class="row center">
+          <h3 class="header col s12 light educ-heading">Education</h3>
+
+          <div class="col l3 m6 s12 white-text school-section">
+            <div class="school">
+              <a href="https://generalassemb.ly"><img src="images/GA_logo.png" alt="General Assembly"></a>
+            </div>
+            <h5>Web Development Immersive</h5>
+            <h6>General Assembly, 2016</h6>
+          </div>
+
+          <div class="col l3 m6 s12 white-text school-section">
+            <div class="school">
+              <a href="http://www.apmg-international.com/en/qualifications/agile-pm/agile-pm.aspx"><img src="images/agile-logo.png" alt="Agile"></a>
+            </div>
+            <h5>Agile PM Practictioner</h5>
+            <h6>APMG International</h6>
+            <h6>The Knowledge Academy, 2015</h6>
+          </div>
+
+          <div class="col l3 m6 s12 white-text school-section">
+            <div class="school-round">
+              <a href="http://www.ed.ac.uk/"><img src="images/edi-uni-color.png" alt="University of Edinburgh"></a>
+            </div>
+            <h5>MSc Global Health & Public Policy</h5>
+            <h6>University of Edinburgh, 2008-2009</h6>
+          </div>
+
+          <div class="col l3 m6 s12 white-text school-section">
+            <div class="school-round">
+              <a href="https://www.tufts.edu/"><img src="images/tufts.png" alt="Tufts University"></a>
+            </div>
+            <h5>BA Anthropology</h5>
+            <h6>Tufts University, 2002-2006</h6>
+          </div>
+
+          </div> <!-- end of row -->
+        </div>
+      </div>
+      <div class="parallax"><img src="images/london.jpg" alt="London"></div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="section" id="projects">
+
+    <!--   Projects   -->
+    <h3 class="header center">Portfolio</h3>
+
+    <p class="center">These are the main projects I completed while studying at General Assembly.</p>
+
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="card medium">
+            <div class="card-image waves-effect waves-block waves-light">
+              <div class="project-shader activator">
+                <img src="images/tile-switch.png" alt="Tile Switch">
+                <h5 class="learn-more activator">Learn More</h5>
+              </div>
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Project 1 | Tile Switch<i class="material-icons right">more_vert</i></span>
+              <p><a href="http://tile-switch.herokuapp.com">http://tile-switch.herokuapp.com</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Tile Switch<i class="material-icons right">close</i></span>
+              <p>My first project, a simple grid-based game where the player has to swap tiles around into the correct order in under a minute.</p>
+
+              <p>Technologies: JavaScript, jQuery.</p>
+
+              <p>See the <a href="https://github.com/laij84/WDI_LDN_21_PROJECT1">code on GitHub</a>.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m6">
+          <div class="card medium">
+            <div class="card-image waves-effect waves-block waves-light">
+              <div class="project-shader activator">
+                <img src="images/love-underground.png" alt="LoveUnderground">
+                <h5 class="learn-more activator">Learn More</h5>
+              </div>
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Project 2 | LoveUnderground<i class="material-icons right">more_vert</i></span>
+              <p><a href="http://loveunderground.herokuapp.com/">http://loveunderground.herokuapp.com</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">LoveUnderground<i class="material-icons right">close</i></span>
+              <p>A personal ads dating website based on the idea of “missed connections” on the London Underground; where two people experience a romantic spark but are too shy or unable to exchange contact details. Users can post ads and message other users.</p>
+
+              <p>Technologies: Ruby on Rails, PostgreSQL.</p>
+
+              <p>See the <a href="https://github.com/laij84/WDI_LDN_21_PROJECT2">code on GitHub</a>.</p>
+            </div>
+          </div>
+        </div>
+
+      </div> <!-- end of row -->
+
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="card medium">
+            <div class="card-image waves-effect waves-block waves-light">
+              <div class="project-shader activator">
+                <img src="images/meet-middle.png" alt="Meet In The Middle">
+                <h5 class="learn-more activator">Learn More</h5>
+              </div>
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Project 3 | Meet In The Middle<i class="material-icons right">more_vert</i></span>
+              <p><a href="https://meet-in-the-middle-app.herokuapp.com/">https://meet-in-the-middle-app.herokuapp.com</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Meet In The Middle<i class="material-icons right">close</i></span>
+              <p>This was a group project using Google’s APIs to locate a mutually convenient meeting point between friends. Users can search for places to meet near the middle by category (e.g. bars, restaurants etc.) and get directions. I worked primarily on the back-end development and APIs of this project.</p>
+
+              <p>Technologies: Node.js, Express, MongoDB, Mongoose.</p>
+              <p>APIs: Google Maps, Places, Directions and Geocoder.</p>
+
+              <p>See the <a href="https://github.com/ccasey79/MEET_IN_THE_MIDDLE">code on GitHub</a>.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m6">
+          <div class="card medium">
+            <div class="card-image waves-effect waves-block waves-light">
+              <div class="project-shader activator">
+                <img src="images/prodiary.png" alt="ProDiary">
+                <h5 class="learn-more activator">Learn More</h5>
+              </div>
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Project 4 | ProDiary<i class="material-icons right">more_vert</i></span>
+              <p><a href="https://prodiary.herokuapp.com/">https://prodiary.herokuapp.com</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">ProDiary<i class="material-icons right">close</i></span>
+              <p>A daily planner that uses gamification and competition to encourage users to invest their time into more productive activities.</p>
+
+              <p>Technologies: MEAN Stack - AngularJS, Node.js, Express, MongoDB, Mongoose.</p>
+
+              <p>See the <a href="https://github.com/laij84/WDI_LDN_21_PROJECT4">code on GitHub</a>.</p>
+            </div>
+          </div>
+        </div>
+
+      </div> <!-- end of row -->
+
+    </div>
+  </div>
+
+  <div class="shader">
+    <div class="parallax-container valign-wrapper" id="contact">
+      <div class="section">
+        <div class="container">
+          <div class="row center">
+            <h3 class="header col s12 light">Get In Touch</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+      </div>
+      <div class="parallax"><img src="images/boston.jpg" alt="Boston"></div>
+    </div>
+  </div>
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Heading</h5>
+          <p class="grey-text text-lighten-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.
+          </p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Links Column 1</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Links Column 1</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Jason Lai 2016
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/main.js"></script>
+
+  </body>
 </html>
