@@ -110,12 +110,17 @@ h4 {
 }
 
 /*Timeline CSS*/
-#job-1, #job-2, #job-3, #job-4 {
-  opacity: 0;
+[id^="job"] h5, [id^="job"] h6, [id^="job"] p  {
+  /*opacity: 0;*/
+  text-shadow: 1px 1px 1px #444;
+}
+
+[id^="job"] h6 {
+  font-size: 1.2em;
 }
 
 .timeline img {
-  width: 100px;
+  width: 150px;
   border-radius: 50%;
   border: 5px solid #ddd;
 }
@@ -123,6 +128,11 @@ h4 {
 .timeline {
   position: relative;
 }
+
+.timeline-date {
+  left: 5px;
+}
+
 .timeline:before {
   content: "";
   position: absolute;
@@ -211,6 +221,10 @@ h4 {
     margin-right: 0px;
   }
 
+  .timeline img {
+    width: 150px;
+  }
+
   .parallax-container .section {
     position: absolute;
     top: 40%;
@@ -222,6 +236,11 @@ h4 {
   .school-round img, .school img {
     width: 70px;
   }
+
+  .educ-heading{
+    margin-top: 15%;
+  }
+
 }
 
 @media only screen and (min-width : 992px) {
@@ -241,7 +260,7 @@ h4 {
   }
 
   .educ-heading{
-    margin-top: -15%;
+    margin-top: -8%;
   }
 
 }
@@ -267,6 +286,10 @@ h4 {
 
   #index-banner .section {
     top: 0;
+  }
+
+  .educ-heading{
+    margin-top: 0%;
   }
 }
 

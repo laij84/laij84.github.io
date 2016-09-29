@@ -50,22 +50,22 @@ function changeSubHeading() {
 }
 
 //Reveal timeline on scroll
-changeSubHeading();
+// changeSubHeading();
 
-var options = [
+// var options = [
  
-  {selector: '#job-1', offset: 100, callback: function(element) {
-    Materialize.fadeInImage($(element));
-  } },
-  {selector: '#job-2', offset: 100, callback: function(element) {
-    Materialize.fadeInImage($(element));
-  } },
-  {selector: '#job-3', offset: 100, callback: function(element) {
-    Materialize.fadeInImage($(element));
-  } },
-  {selector: '#job-4', offset: 100, callback: function(element) {
-    Materialize.fadeInImage($(element));
-  } }
+//   {selector: '#job-1', offset: 100, callback: function(element) {
+//     Materialize.fadeInImage($(element));
+//   } },
+//   {selector: '#job-2', offset: 100, callback: function(element) {
+//     Materialize.fadeInImage($(element));
+//   } },
+//   {selector: '#job-3', offset: 100, callback: function(element) {
+//     Materialize.fadeInImage($(element));
+//   } },
+//   {selector: '#job-4', offset: 100, callback: function(element) {
+//     Materialize.fadeInImage($(element));
+//   } }
 
-];
-Materialize.scrollFire(options);
+// ];
+// Materialize.scrollFire(options);
