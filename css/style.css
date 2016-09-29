@@ -109,6 +109,18 @@ h4 {
   width: 100%;
 }
 
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  background-image: url(../images/jason.jpg);
+  background-size: cover;
+  object-fit: fill;
+  object-position: center;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+
 .icon-badge{
   padding: 10px;
   background-color: rgba(0,0,0,0.7);
