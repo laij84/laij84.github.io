@@ -49,9 +49,8 @@ function changeSubHeading() {
     }
 }
 
+changeSubHeading();
 //Reveal timeline on scroll
-// changeSubHeading();
-
 // var options = [
  
 //   {selector: '#job-1', offset: 100, callback: function(element) {

@@ -77,7 +77,7 @@ div#index-banner {
 .parallax-container {
   /*min-height: 90vh;*/
   /*line-height: 0;*/
-  height: 100vh;
+  min-height: 100vh !important;
   color: rgba(255,255,255,.9);
 }
 
@@ -105,8 +105,24 @@ h4 {
 
 .shader {
   background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5) );
-  height: 100%;
+  max-height: 100%;
   width: 100%;
+}
+
+.icon-badge{
+  padding: 10px;
+  background-color: rgba(0,0,0,0.7);
+  border-radius: 50%;
+}
+
+.icon-block h5 {
+  text-shadow: 1px 1px 1px #444;
+}
+
+.icon-block h6 {
+  font-size: 1.3em;
+  text-shadow: 1px 1px 1px #444;
+  text-transform: none;
 }
 
 /*Timeline CSS*/
@@ -187,7 +203,7 @@ h4 {
   text-shadow: 1px 1px 1px #444;
 }
 
-.educ {
+.plx-section {
   top: 0 !important;
 }
 
@@ -225,6 +241,10 @@ h4 {
     width: 150px;
   }
 
+  .timeline:before, .timeline:after {
+    height: 200%;
+  }
+
   .parallax-container .section {
     position: absolute;
     top: 40%;
@@ -237,8 +257,8 @@ h4 {
     width: 70px;
   }
 
-  .educ-heading{
-    margin-top: 15%;
+  .plx-heading{
+    /*margin-top: 15%;*/
   }
 
 }
@@ -259,8 +279,8 @@ h4 {
     top: 0px;
   }
 
-  .educ-heading{
-    margin-top: -8%;
+  .plx-heading{
+    /*margin-top: -8%;*/
   }
 
 }
@@ -281,15 +301,15 @@ h4 {
   } 
 
   .school-section h5 {
-    font-size: 1.7em;
+    font-size: 1.5em;
   }
 
   #index-banner .section {
     top: 0;
   }
 
-  .educ-heading{
-    margin-top: 0%;
+  .plx-heading{
+    /*margin-top: 0%;*/
   }
 }
 
@@ -307,9 +327,22 @@ footer.page-footer {
 }
 
 @media only screen and (max-width : 400px) {
+
+  h3.header {
+    font-size: 1.8em;
+  }
+
   .timeline {
     display:none;
   }
+
+  .school-section h5 {
+    font-size: 1em;
+  }
+
+  .school-round img, .school img {
+    width: 40px;
+  } 
 
 }
 
