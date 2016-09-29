@@ -59,7 +59,7 @@ nav:hover:after {
 
 p {
   line-height: 2rem;
-  font-size: 1.1em;
+  font-size: 1.2em;
 }
 
 .button-collapse {
@@ -127,11 +127,11 @@ h4 {
 
 .carousel {
   top: -100px;
+  overflow: visible;
 }
 
 /*Timeline CSS*/
 [id^="job"] h5, [id^="job"] h6, [id^="job"] p  {
-  /*opacity: 0;*/
   text-shadow: 1px 1px 1px #444;
 }
 
@@ -211,6 +211,14 @@ h4 {
   top: 0 !important;
 }
 
+.plx-section p {
+  text-shadow: 1px 1px 1px #444;
+}
+
+.email {
+  text-transform: lowercase;
+}
+
 .project-shader {
   height: 100%;
   width: 100%;
@@ -233,6 +241,10 @@ h4 {
   right: 0;
   display: none;
   color: white;
+}
+
+.social {
+  width: 100px;
 }
 
 @media only screen and (max-width : 992px) {
@@ -265,6 +277,9 @@ h4 {
     margin-top: 15%;
   }
 
+  .social {
+    width:80px;
+  }
 }
 
 @media only screen and (min-width : 992px) {
@@ -314,6 +329,10 @@ h4 {
 
   .plx-heading{
     margin-top: 0%;
+  }
+
+  .social {
+    width: 50px;
   }
 }
 
