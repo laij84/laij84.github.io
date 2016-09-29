@@ -265,6 +265,9 @@ h4 {
     margin-right: 0px;
   }
 
+  nav:after {
+    content: none;
+  }
   .timeline img {
     width: 150px;
   }
