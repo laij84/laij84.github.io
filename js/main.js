@@ -50,6 +50,13 @@ function changeSubHeading() {
 }
 
 changeSubHeading();
+
+function resizeBackground() {
+    $(".parallax-container").height(jQuery(window).height() + 60);
+    console.log("height");
+}
+
+resizeBackground();
 //Reveal timeline on scroll
 // var options = [
  
