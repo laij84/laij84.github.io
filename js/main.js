@@ -52,8 +52,8 @@ function changeSubHeading() {
 changeSubHeading();
 
 function resizeBackground() {
-    $(".parallax-container").height(jQuery(window).height() + 60);
-    console.log("height");
+    $(".parallax-container").height($(window).height() + 60);
+ 
 }
 
 resizeBackground();
