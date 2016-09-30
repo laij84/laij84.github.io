@@ -299,6 +299,10 @@ h4 {
   .carousel {
     top: 100px;
   }
+
+  .icon-block h2{
+    font-size: 1.7em;
+  } 
 }
 
 @media only screen and (min-width : 992px) {
@@ -338,7 +342,7 @@ h4 {
     width: 50px;
   } 
 
-  .school-section h5 {
+  .school-section h5, .icon-block h5 {
     font-size: 1.5em;
   }
 
@@ -357,20 +361,14 @@ h4 {
   .carousel {
     top: 0px;
   }
+
 }
 
 .icon-block {
   padding: 0 15px;
 }
-.icon-block .material-icons {
-  font-size: inherit;
-}
 
 
-footer.page-footer {
-  margin: 0;
-
-}
 
 @media only screen and (max-width : 400px) {
 
@@ -382,13 +380,32 @@ footer.page-footer {
     display:none;
   }
 
-  .school-section h5 {
+  .school-section h5, .icon-block h5 {
     font-size: 1em;
   }
 
   .school-round img, .school img {
     width: 40px;
   } 
+
+  .icon-block h2{
+    font-size: 1.5em;
+  } 
+
+  .icon-block h6 {
+    font-size: 1em;
+  }
+
+}
+
+
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+
+footer.page-footer {
+  margin: 0;
 
 }
 
