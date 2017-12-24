@@ -1,7 +1,42 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
+const path = require('path');
 
- // You can delete this file if you're not using it
+exports.createPages = ({ graphql, boundActionCreators }) => {
+    const { createPage } = boundActionCreators;
+
+    return new Promise((resolve, reject) =>{
+        graphql(
+            `
+                {
+                    allContentfulPost(filter: {}) {
+                        edges {
+                            node {
+                                slug
+                            }
+                        }
+                    }
+                }
+            `
+        ).then(result => {
+            if (result.errors) {
+                reject(result.errors);
+            }
+
+            const postTemplate = path.resolve(`./src/templates/post.js`);
+
+            result.data.allContentfulPost.edges.forEach((edge) => {
+                createPage({
+                  // Each page is required to have a `path` as well
+                  // as a template component. The `context` is
+                  // optional but is often necessary so the template
+                  // can query data specific to each page.
+                  path: `/posts/${edge.node.slug}/`,
+                  component: postTemplate,
+                  context: {
+                    id: edge.node.slug,
+                  },
+                })
+            })
+            resolve();
+        })
+    });
+}

@@ -1,3 +1,5 @@
+var autoprefixer = require('autoprefixer');
+
 let env = process.env.NODE_ENV || 'development';
 require('dotenv').config({path: `./.env.${env}`});
 
@@ -7,6 +9,15 @@ module.exports = {
     },
     plugins: [
         `gatsby-plugin-react-helmet`,
+        {
+            resolve: `gatsby-plugin-postcss-sass`,
+            options: {
+            postCssPlugins: [
+              autoprefixer()
+            ],
+            precision: 8
+            }
+        },
         {
           resolve: `gatsby-source-contentful`,
           options: {
