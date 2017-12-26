@@ -11,7 +11,7 @@ export default class PostPage extends Component {
         return (
             <div>
                 <h1>{post.title}</h1>
-                <ReactMarkdown source={post.content.content} />
+                <ReactMarkdown source={post.content.content} escapeHtml={false}/>
             </div>
         )
     }
