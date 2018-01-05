@@ -25,6 +25,7 @@ export default class RouteTransition extends Component {
       const { children: child, pathname } = this.props;
         return (
             <TransitionMotion
+              defaultStyle={{ position: 'absolute' }}
               styles={ [{
                 key: pathname,
                 style: getStyles(),
@@ -86,7 +87,7 @@ export default class RouteTransition extends Component {
 
 var styles = {
   wrapper: {
-    position: 'absolute',
+    position: 'static',
     width: '100%'
   }
 };

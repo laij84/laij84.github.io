@@ -1,0 +1,23 @@
+// Paths
+$img:                   '../img/';
+$fonts:                 '../fonts/';
+
+// Breakpoints
+$bp-xl:                 1200px;
+$bp-l:                  992px;
+$bp-m:                  778px;
+$bp-s:                  576px;
+
+// Colors
+$gunmetal:              #2b3940;
+$monte-carlo:           #8bd2cb;
+$iron:                  #cdd3d8;
+$outer-space:           #202b30;
+$sunglo:                #e06c75;
+$white:                 #fefefe;
+
+// Typo
+$text:                  $iron;
+$body-font:             'Open Sans', sans-serif;
+$title-font:            'Oswald', sans-serif;
+$code-font:             'Fira Mono', monospace;

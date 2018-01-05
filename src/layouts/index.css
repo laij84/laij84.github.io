@@ -409,7 +409,6 @@ pre {
   border-radius: 3px;
   overflow: auto;
   word-wrap: normal;
-  /*padding: 1.45rem;*/
 }
 table {
   margin-left: 0;
@@ -592,13 +591,13 @@ td:last-child {
 }
 tt,
 code {
-  background-color: hsla(0, 0%, 0%, 0.04);
+/*  background-color: hsla(0, 0%, 0%, 0.04);
   border-radius: 3px;
   font-family: "SFMono-Regular", Consolas, "Roboto Mono", "Droid Sans Mono",
     "Liberation Mono", Menlo, Courier, monospace;
   padding: 0;
   padding-top: 0.2em;
-  padding-bottom: 0.2em;
+  padding-bottom: 0.2em;*/
 }
 pre code {
   background: none;
@@ -609,7 +608,7 @@ code:after,
 tt:before,
 tt:after {
   letter-spacing: -0.2em;
-  content: " ";
+  content: "";
 }
 pre code:before,
 pre code:after,
@@ -617,6 +616,35 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
+
+.fade-enter {
+  opacity: 0.01;
+  filter: blur(5px);
+  transform: scale(1.1);
+  transform-origin: right top;
+}
+.fade-enter.fade-enter-active{
+  opacity: 1;
+  transition: opacity 500ms ease-in, filter 500ms ease-in, transform 500ms ease-in;
+  filter: blur(0px);
+  transform: scale(1);
+}
+
+.fade-exit {
+  opacity: 1;
+  filter: blur(0px);
+  transform: scale(1);
+  transform-origin: right top;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in, filter 500ms ease-in, transform 500ms ease-in;
+  filter: blur(5px);
+  transform: scale(1.1);
+}
+
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;

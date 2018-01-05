@@ -1,5 +1,16 @@
 // Bootstrap Grid and Utilities
 @import 'bootstrap/grid';
 
+// Root
+@import 'vars';
+@import 'fonts';
+
+// Components
+@import 'components/body';
+@import 'components/typo';
+@import 'components/code';
+@import 'components/icons';
+@import 'components/nav';
+
 // Vendor Styles
 @import 'vendor/materialdark'
