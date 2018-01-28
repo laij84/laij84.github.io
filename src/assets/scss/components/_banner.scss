@@ -1,4 +1,52 @@
-// Header
+// Banner
+.banner {
+    padding: 8rem 0;
+    position: relative;
+    background: {
+        position: center;
+        repeat: no-repeat;
+        size: cover;
+    }
+}
+
+.banner__cont {
+    z-index: 1;
+    position: relative;
+}
+
+.banner__title {
+    margin-bottom: 0.5em;
+}
+
+.banner__intro {
+    font-size: 1.111em;
+
+    p {
+        margin-bottom: 1em;
+    }
+}
+
+.banner__published {
+    font-style: italic;
+    letter-spacing: 1px; 
+    color: $spring-bud;
+    margin-bottom: 0;
+}
+
+.banner__tags {
+    margin-bottom: 0.5em;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.banner__ovly {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba($outer-space, 0.8);
+}
 
 // 992px above
 // @media (min-width: $bp-l) {
@@ -11,9 +59,11 @@
 // }
 
 // 778px to 991px
-// @media (min-width: $bp-m) and (max-width: ($bp-l - 1)) {
-
-// }
+@media (min-width: $bp-m) and (max-width: ($bp-l - 1)) {
+    .banner {
+        padding: 6rem 0;
+    }
+}
 
 // 576px to 777px
 // @media (min-width: $bp-s) and (max-width: ($bp-m - 1)) {
@@ -21,11 +71,13 @@
 // }
 
 // 777px under
-// @media (max-width: $bp-m -1) {
-
-// }
+@media (max-width: $bp-m - 1) {
+    .banner {
+        padding: 4rem 0;
+    }
+}
 
 // 576px under
-// @media (max-width: $bp-s -1) {
+// @media (max-width: $bp-s - 1) {
 
 // }

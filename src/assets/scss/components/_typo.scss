@@ -8,11 +8,24 @@ h5 {
     color: $monte-carlo;
 }
 
+h1 {
+    font-size: 2.25em;
+    margin-bottom: 1.45em;
+    line-height: 1.1;
+}
+
+h2 {
+    margin-bottom: 1.45em;
+    font-size: 1.62671em;
+    line-height: 1.1;
+}
+
 p {
     font-family: $body-font;
     font-weight: 300;
     line-height: 1.3;
     color: $iron;
+    margin-bottom: 1.45em;
 }
 
 strong {

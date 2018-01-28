@@ -1,6 +1,22 @@
+pre {
+    ::-webkit-scrollbar {
+        background: transparent;
+        width: 18px;
+        height: 18px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: $outer-space;
+        border: 5px solid transparent;
+        background-clip: padding-box;
+        border-radius: 10px;
+    }
+}
+
 code {
     color: $sunglo;
     border-radius: 3px;
     font-family: $code-font;
+    line-height: 1.42;
     padding: 0.2em;
 }
