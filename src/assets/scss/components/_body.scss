@@ -4,6 +4,8 @@ html {
     -webkit-font-smoothing: subpixel-antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility; 
+    height: 100%;
+    overflow: hidden;
 }
 
 body {
@@ -17,6 +19,8 @@ body {
     font-family: $body-font;
     text-transform: none;
     line-height: 1;
+    height: 100%;
+    overflow: hidden;
 }
 
 // 992px above

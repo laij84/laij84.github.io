@@ -1,0 +1,46 @@
+.pageWrap {
+    position: relative;
+    &.--home {
+        height: 100vh;
+        background: {
+            image: url('#{$img}bg-code.jpg');
+            size: cover;
+            repeat: no-repeat;
+            position: center center;
+        }
+    }
+}
+
+.pageWrap__ovly {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba($outer-space, 0.8);
+}
+
+.homePage__cont {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: $white;
+    text-align: center;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.homePage__title {
+    font-size: 4.5em;
+    letter-spacing: 3px;
+    margin-bottom: 0.1em;
+    color: $text;
+}
+
+.homePage__subtitle {   
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}

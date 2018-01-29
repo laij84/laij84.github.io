@@ -19,17 +19,12 @@ class IndexPage extends Component {
                 classNames="fade"
                 shouldShow={this.state.in}
             >
-                <div className="container">
-                    <div className="row">
-                        <div className="col-sm-10 offset-sm-1">
-                            <h1>Hi People</h1>
-                            <p>Welcome to your new Gatsby site.</p>
-                            <p>Now go build something great.</p>
-                            <p><i className="icon-user"></i></p>
-                            <p><Link to="/page-2/">Go to page 2</Link></p>
-                            <p><Link to="/posts/how-to-make-styled-checkboxes">Blogpost</Link></p>
-                        </div>
+                <div className="pageWrap --home">
+                    <div className="homePage__cont">
+                        <h1 className="homePage__title">Jason Lai</h1>
+                        <p className="homePage__subtitle">Web Developer</p>
                     </div>
+                    <div className="pageWrap__ovly"></div>
                 </div>
             </PageTransition>
         )
