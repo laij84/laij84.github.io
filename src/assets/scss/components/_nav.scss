@@ -6,7 +6,10 @@
     height: 60px;
     justify-content: space-between;
     z-index: 2;
-    border-right: 1px solid transparent;
+    border-bottom: 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 1px solid;
     border-image: linear-gradient(to bottom, $spring-bud 0%, $monte-carlo 25%, $lavender 50%, $sunglo 100%);
     border-image-slice: 1;
 }
@@ -71,7 +74,7 @@
 // Component Example 
 
 // 992px above
-@media (min-width: $bp-l) {
+@media (min-width: $bp-m) {
     .nav {
         position: fixed;
         height: 100vh;
@@ -108,8 +111,8 @@
 // 777px under
 @media (max-width: ($bp-m - 1)) {
     .nav {
-        border-right: none;
-        border-bottom: 1px solid transparent;
+        border-right: 0;
+        border-bottom: 1px solid;
         border-image: linear-gradient(to right, $spring-bud 0%, $monte-carlo 25%, $lavender 50%, $sunglo 100%);
         border-image-slice: 1;
         position: static;
