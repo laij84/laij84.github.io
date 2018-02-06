@@ -5,7 +5,7 @@ html {
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility; 
     height: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 body {
@@ -20,7 +20,7 @@ body {
     text-transform: none;
     line-height: 1;
     height: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 // 992px above

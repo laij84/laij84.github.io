@@ -1,7 +1,8 @@
+import Link from 'gatsby-link'
 import React, { Component } from 'react';
 import PageTransition from '../components/PageTransition'
 
-class NotFoundPage extends Component {
+class AboutPage extends Component {
     constructor() {
         super();
         this.state = { in: true }
@@ -23,8 +24,7 @@ class NotFoundPage extends Component {
                         <div className="row">
                             <div className="col-sm-10 offset-sm-1">
                                 <div className="section">
-                                    <h1>404 Error - Page not found</h1>
-                                    <p>You just hit a route that doesn&#39;t exist...</p>
+                                    <h1>About</h1>
                                 </div>
                             </div>
                         </div>
@@ -35,5 +35,30 @@ class NotFoundPage extends Component {
     }
 }
 
-export default NotFoundPage
+export default AboutPage
 
+// export const AboutPageQuery = graphql`
+// query AboutPageQuery {
+//     allContentfulPost(filter: {}) {
+//         edges {
+//             node {
+//                 id
+//                 title
+//                 published
+//                 slug
+//                 categories {
+//                     id
+//                     name
+//                 }
+//                 tags {
+//                     id
+//                     name
+//                 }
+//                 content {
+//                     content
+//                 }
+//             }
+//         }
+//     }
+// }
+// `

@@ -1,7 +1,11 @@
 .pageWrap {
     position: relative;
     &.--home {
-        height: 100vh;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
         background: {
             image: url('#{$img}bg-code.jpg');
             size: cover;
