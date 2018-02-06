@@ -29,7 +29,8 @@
 .nav__listItem {
     margin-bottom: 0;
 
-    &:hover {
+    &:hover,
+    &.--active {
         .nav__link {
             color: #C3E88D;
         }

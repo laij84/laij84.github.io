@@ -27,7 +27,7 @@ class TemplateWrapper extends Component {
                 { name: 'keywords', content: 'sample, something' },
                 ]}
             />
-            <Nav/>
+            <Nav {...this.props}/>
             <TransitionGroup>
                 {this.props.children({...this.props, getTransitionState})}
             </TransitionGroup>
