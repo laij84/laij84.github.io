@@ -29,12 +29,20 @@
 .nav__listItem {
     margin-bottom: 0;
 
-    &:hover,
+    &:hover {
+        .nav__link {
+            color: $spring-bud;
+        }
+    }
+
     &.--active {
         .nav__link {
-            color: #C3E88D;
+            color: $lavender;
         }
+    }
 
+    &:hover,
+    &.--active {
         .nav__linkTitle {
             max-height: 0.8rem;
             opacity: 1;
@@ -122,6 +130,25 @@
             .nav__list {
                 left: 0;
             }
+
+            .nav__mobileToggle {                
+                .nav__mobileToggleIcon {
+                    background-color: transparent;
+
+                    &:before {
+                        transform-origin: center;
+                        transform: rotate(-45deg) translate(-50%);
+                        left: 10px;
+                    }
+                    &:after {
+                        transform-origin: center;
+                        transform: rotate(45deg) translate(-50%);
+                        top: 9px;
+                        left: 10px;
+                    }
+                }
+                
+            } 
         }
     }
 
@@ -148,14 +175,14 @@
         display: block;
         cursor: pointer;
 
-        &:hover {
-            .nav__mobileToggleIcon {
-                &:before,
-                &:after {
-                    width: 17px;
-                }
-            }
-        }
+        // &:hover {
+        //     .nav__mobileToggleIcon {
+        //         &:before,
+        //         &:after {
+        //             width: 17px;
+        //         }
+        //     }
+        // }
     }   
 
     .nav__mobileToggleIcon {
@@ -166,7 +193,7 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%);
+        transform: translate(-50%, -50%);
 
         &:before {
             content: '';

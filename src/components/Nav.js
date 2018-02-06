@@ -14,37 +14,45 @@ class Nav extends Component {
         console.log(this.state.navOpen);
     }
 
+    closeMobileNav = () => {
+        if (window.matchMedia('(max-width: 777px)').matches) {
+            setTimeout(()=>{ 
+                this.setState({navOpen: false});
+            }, 600);
+        }
+    }
+
     render() {
         const path = this.props.location.pathname;
         return (
             <nav className={this.state.navOpen ? 'nav --open' : 'nav'}>
                 <ul className="nav__list">
                     <li className={path === '/' ? 'nav__listItem --active' : 'nav__listItem'}>
-                        <Link className="nav__link" to="/">
+                        <Link className="nav__link" to="/" onClick={this.closeMobileNav}>
                             <i className="icon-home"></i>
                             <span className="nav__linkTitle">Home</span>
                         </Link>
                     </li>
                     <li className={path.replace(/(\/#|\/|#)$/, '') === '/about' ? 'nav__listItem --active' : 'nav__listItem'}>
-                        <Link className="nav__link" to="/about">
+                        <Link className="nav__link" to="/about" onClick={this.closeMobileNav}>
                             <i className="icon-user"></i>
                             <span className="nav__linkTitle">About</span>
                         </Link>
                     </li>
                     <li className={path.replace(/(\/#|\/|#)$/, '') === '/work' ? 'nav__listItem --active' : 'nav__listItem'}>
-                        <Link className="nav__link" to="/work">
+                        <Link className="nav__link" to="/work" onClick={this.closeMobileNav}>
                             <i className="icon-code"></i>
                             <span className="nav__linkTitle">Work</span>
                         </Link>
                     </li>
                     <li className={path.replace(/(\/#|\/|#)$/, '') === '/blog' ? 'nav__listItem --active' : 'nav__listItem'}>
-                        <Link className="nav__link" to="/blog">
+                        <Link className="nav__link" to="/blog" onClick={this.closeMobileNav}>
                             <i className="icon-blog"></i>
                             <span className="nav__linkTitle">Blog</span>
                         </Link>
                     </li>
                     <li className={path.replace(/(\/#|\/|#)$/, '') === '/contact' ? 'nav__listItem --active' : 'nav__listItem'}>
-                        <Link className="nav__link" to="/contact">
+                        <Link className="nav__link" to="/contact" onClick={this.closeMobileNav}>
                             <i className="icon-mail"></i>
                             <span className="nav__linkTitle">Contact</span>
                         </Link>
