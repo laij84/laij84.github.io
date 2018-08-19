@@ -1,24 +1,21 @@
-import Link from 'gatsby-link'
-import React, { Component } from 'react';
+// import Link from 'gatsby-link'
+import React, { Component } from 'react'
 import PageTransition from '../components/PageTransition'
 
 class WorkPage extends Component {
     constructor() {
-        super();
-        this.state = { in: true }
+        super()
+        this.state = { pageIn: true }
     }
 
     componentWillUnmount() {
-      this.setState({in: false})
+        this.setState({ pageIn: false })
     }
 
     render() {
+        const { pageIn } = this.state
         return (
-            <PageTransition
-                timeout={350 }
-                classNames="fade"
-                shouldShow={this.state.in}
-            >
+            <PageTransition timeout={350} classNames="fade" shouldShow={pageIn}>
                 <div className="pageWrap --about">
                     <div className="container">
                         <div className="row">

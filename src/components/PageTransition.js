@@ -1,19 +1,22 @@
-import React, { Component } from 'react';
-import CSSTransition from 'react-transition-group/CSSTransition';
+import React from 'react'
+import CSSTransition from 'react-transition-group/CSSTransition'
+import PropTypes from 'prop-types'
 
-export default class PageTransition extends Component {
-    constructor() {
-        super()
-    }
+const PageTransition = ({ timeout, classNames, shouldShow, children }) => (
+    <CSSTransition timeout={timeout} classNames={classNames} in={shouldShow}>
+        {children}
+    </CSSTransition>
+)
 
-    render() {
-        return (
-            <CSSTransition
-              timeout={this.props.timeout}
-              classNames={this.props.classNames}
-              in={this.props.shouldShow}>
-              {this.props.children}
-            </CSSTransition>
-        )  
-    }
+PageTransition.propTypes = {
+    timeout: PropTypes.number.isRequired,
+    classNames: PropTypes.string.isRequired,
+    shouldShow: PropTypes.bool.isRequired,
+    children: PropTypes.node,
 }
+
+PageTransition.defaultProps = {
+    children: null,
+}
+
+export default PageTransition

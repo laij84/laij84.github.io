@@ -174,15 +174,8 @@
         position: relative;
         display: block;
         cursor: pointer;
-
-        // &:hover {
-        //     .nav__mobileToggleIcon {
-        //         &:before,
-        //         &:after {
-        //             width: 17px;
-        //         }
-        //     }
-        // }
+        background-color: transparent;
+        border: none;
     }   
 
     .nav__mobileToggleIcon {

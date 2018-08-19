@@ -1,30 +1,27 @@
-import Link from 'gatsby-link'
-import React, { Component } from 'react';
+// import Link from 'gatsby-link'
+import React, { Component } from 'react'
 import PageTransition from '../components/PageTransition'
 
 class IndexPage extends Component {
     constructor() {
-        super();
-        this.state = { in: true }
+        super()
+        this.state = { pageIn: true }
     }
 
     componentWillUnmount() {
-      this.setState({in: false})
+        this.setState({ pageIn: false })
     }
 
     render() {
+        const { pageIn } = this.state
         return (
-            <PageTransition
-                timeout={350 }
-                classNames="fade"
-                shouldShow={this.state.in}
-            >
+            <PageTransition timeout={350} classNames="fade" shouldShow={pageIn}>
                 <div className="pageWrap --home">
                     <div className="homePage__cont">
                         <h1 className="homePage__title">Jason Lai</h1>
                         <p className="homePage__subtitle">Web Developer</p>
                     </div>
-                    <div className="pageWrap__ovly"></div>
+                    <div className="pageWrap__ovly" />
                 </div>
             </PageTransition>
         )
@@ -34,27 +31,27 @@ class IndexPage extends Component {
 export default IndexPage
 
 export const IndexPageQuery = graphql`
-query IndexPageQuery {
-    allContentfulPost(filter: {}) {
-        edges {
-            node {
-                id
-                title
-                published
-                slug
-                categories {
+    query IndexPageQuery {
+        allContentfulPost(filter: {}) {
+            edges {
+                node {
                     id
-                    name
-                }
-                tags {
-                    id
-                    name
-                }
-                content {
-                    content
+                    title
+                    published
+                    slug
+                    categories {
+                        id
+                        name
+                    }
+                    tags {
+                        id
+                        name
+                    }
+                    content {
+                        content
+                    }
                 }
             }
         }
     }
-}
 `
