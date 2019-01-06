@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { graphql } from 'gatsby'
 import PropTypes from 'prop-types'
 import ReactMarkdown from 'react-markdown'
 import hljs from 'highlight.js'

@@ -1,11 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-// import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 import TransitionGroup from 'react-transition-group/TransitionGroup'
-import Nav from '../components/Nav'
+import Nav from './Nav'
 
-import './index.css'
+import '../assets/scss/index.scss'
 import '../assets/scss/style.scss'
 
 const TemplateWrapper = props => {
@@ -20,13 +19,13 @@ const TemplateWrapper = props => {
                 ]}
             />
             <Nav {...props} />
-            <TransitionGroup>{children({ ...props })}</TransitionGroup>
+            <TransitionGroup>{children}</TransitionGroup>
         </div>
     )
 }
 
 TemplateWrapper.propTypes = {
-    children: PropTypes.func.isRequired,
+    children: PropTypes.node.isRequired,
 }
 
 export default TemplateWrapper
