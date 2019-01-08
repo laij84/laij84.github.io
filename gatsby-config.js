@@ -8,7 +8,9 @@ module.exports = {
         title: `Gatsby Default Starter`,
     },
     plugins: [
+        `gatsby-plugin-layout`,
         `gatsby-plugin-react-helmet`,
+        'gatsby-plugin-styled-components',
         {
             resolve: `gatsby-plugin-sass`,
             options: {

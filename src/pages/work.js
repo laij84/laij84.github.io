@@ -1,6 +1,6 @@
 // import Link from 'gatsby-link'
 import React, { Component } from 'react'
-import Layout from '../components/Layout'
+// import Layout from '../layouts/Layout'
 import PageTransition from '../components/PageTransition'
 
 class WorkPage extends Component {
@@ -15,27 +15,18 @@ class WorkPage extends Component {
 
     render() {
         const { pageIn } = this.state
-        const { location } = this.props
         return (
-            <Layout location={location}>
-                <PageTransition
-                    timeout={350}
-                    classNames="fade"
-                    shouldShow={pageIn}
-                >
-                    <div className="pageWrap --about">
-                        <div className="container">
-                            <div className="row">
-                                <div className="col-sm-10 offset-sm-1">
-                                    <div className="section">
-                                        <h1>Work</h1>
-                                    </div>
-                                </div>
+            <div className="pageWrap --about">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-sm-10 offset-sm-1">
+                            <div className="section">
+                                <h1>Work</h1>
                             </div>
                         </div>
                     </div>
-                </PageTransition>
-            </Layout>
+                </div>
+            </div>
         )
     }
 }
