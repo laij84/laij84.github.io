@@ -1,0 +1,23 @@
+export const sm = 375
+export const md = 768
+export const lg = 1024
+export const xl = 1440
+
+export interface Breakpoints {
+  sm: string
+  md: string
+  lg: string
+  xl: string
+}
+
+export const breakpoints: string[] & Breakpoints = Object.assign(
+  [`${sm}px`, `${md}px`, `${lg}px`, `${xl}px`],
+  {
+    default: '0px',
+    sm: `${sm}px`,
+    md: `${md}px`,
+    lg: `${lg}px`,
+    xl: `${xl}px`,
+  },
+)
+export const widths: { [key: string]: number } = { sm, md, lg, xl }
